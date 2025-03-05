@@ -12,7 +12,7 @@ import DressStyle from "@/components/homepage/DressStyle";
 import Reviews from "@/components/homepage/Reviews";
 import Link from "next/link";
 import product from "@/sanity/schemaTypes/product";
-import { reviewsData } from "./reviews";
+import { reviewsData } from "@/types/reviews";
 
 const Page = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -63,7 +63,7 @@ const Page = () => {
              <div className="mb-[50px] sm:mb-20">
        <DressStyle />
       </div>
-{/*     <Reviews data={reviewsData} /> */}
+    <reviewsData/>
     </div>
   );
 };
